@@ -16,6 +16,31 @@ const rockPaperScissors = (hand1, hand2) => {
 
   // Write code here
   // Use the unit test to see what is expected
+  let user1 = "Hand one wins!";
+  let user2 = "Hand two wins!";
+  let tie = "It's a tie!";
+
+  if(hand1.trim() == "rock" && hand2.trim() == "scissor"){
+    return user1;
+  }else if(hand1.trim() == "rock" && hand2.trim() == "paper"){
+    return user2;
+  }else if(hand1.trim() == "rock" && hand2.trim() == "rock"){
+    return tie;
+  }else if(hand1.trim() == "paper" && hand2.trim() == "scissor"){
+    return user2;
+  }else if(hand1.trim() == "paper" && hand2.trim() == "paper"){
+    return tie;
+  }else if(hand1.trim() == "paper" && hand2.trim() == "rock"){
+    return user1;
+  }else if(hand1.trim() == "scissor" && hand2.trim() == "scissor"){
+    return tie;
+  }else if(hand1.trim() == "scissor" && hand2.trim() == "paper"){
+    return user1;
+  }else if(hand1.trim() == "scissor" && hand2.trim() == "rock"){
+    return user2;
+  }
+
+
 
 }
 
